@@ -9,23 +9,27 @@ const collectionScreen = () =>{
     const { task, addItems, removeItems } = useContext(ItemContext)
 return(
 
-    <View style={{flexDirection:"row"}}>
-         <View style={{flexDirection:"row"}}>
+    <View style={{flex:1,backgroundColor:"#E4E3DB"}}>
+         <View style={{padding:20}}>
   <Text style={{fontSize:30, fontWeight:"bold"}}>ADD TASKS HERE</Text>
   </View>
       
-    <View style={{marginTop:50, marginRight:50, alignContent:"center", justifyContent:"center"}}>
-      <TextInput style={{height:40, borderRadius:30, borderBottomColor:"black",marginRight:100}}
-      placeholder="Enter new task here"
-      value={add}
-      onChangeText={text=>setAdd(text)}
-      />
+      <View style={{alignContent:"center", justifyContent:"center", padding:70}}>
+       <TextInput style={{height:40, borderRadius:30, borderBottomColor:"black"}}
+       placeholder="Enter new task here"
+       value={add}
+       onChangeText={text=>setAdd(text)}
+       />
 
-      <Button
-      title="SUBMIT"
-      color="#000"
-      onPress={()=>addItems(add)}/>
-    </View>
+       <View style={{marginTop:20, width:70}}>
+       <Button 
+       title="SUBMIT"
+       color="#000"
+       onPress={()=>addItems(add)}/>
+       </View>
+       
+      </View>
+  
 
     </View>
   

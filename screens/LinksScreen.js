@@ -15,7 +15,7 @@ const LinkScreen = () =>{
     <Animated.View style={{backgroundColor:"#ffffff", width:"50%"}}>
      
     </Animated.View>
-    <Text style={{paddingLeft:80,marginTop:-10, color:"white"}}>80%</Text>
+    <Text style={{paddingLeft:160,marginTop:-10, color:"white"}}>80%</Text>
   </View>
 
 

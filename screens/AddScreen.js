@@ -31,7 +31,7 @@ const AddScreen = ()=>{
       setCollection(removedItem);
   }
     return(
-        <View style={{flex:"row"}}>
+        <View style={{flex:"row", backgroundColor:"#E4E3DB", flex:1}}>
           <View style={{padding:20}}>
               <Text style={{fontWeight:"bold", fontSize:20}}>CREATE COLLECTIONS</Text>
           </View>

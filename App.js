@@ -35,6 +35,7 @@ export default function App(props) {
         let newArr=[...task, obj]
         setTask(newArr)
         // setAdd("")
+        
       }
  const removeItems = Item =>{
    let removed = task.filter((removeItem)=>{
